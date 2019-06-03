@@ -41,6 +41,9 @@
 
         <druid-spring-boot-starter.version>1.1.10</druid-spring-boot-starter.version>
 
+        <lombok.version>1.18.4</lombok.version>
+        <fastjson.version>1.2.54</fastjson.version>
+        <swagger2.version>2.6.1</swagger2.version>
         <!--配置远程的github服务-->
         <github.global.server>github</github.global.server>
     </properties>
@@ -154,6 +157,27 @@
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid-spring-boot-starter</artifactId>
                 <version>${druid-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-jpa</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger2.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
